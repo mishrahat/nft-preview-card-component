@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h3, span {
+    color: hsl(0, 0%, 100%);
+}
+p{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.card {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    margin-left: 40%;
+    margin-top: 6%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+}
+
+.card img {
+    width:350px;
+    border-radius: 20px;
+    background-color: red;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-detail {
+    display: flex;
+}
+
+svg {
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+.creation-part img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.creation-part {
+    display: flex;
+    flex-direction: row;
+}
+
+hr {
+    width: 100%;
+}
+.creator-name {
+    margin-left: 20px;
+}
+
+/* responsive design  */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .card {
+          position: relative;
+          right: 130px;
+          width: 90%;
+          margin-top: 15%;
+      }
+      .card img {
+          width: 100%;
+      }
+
+      .creation-part img {
+        width: 30px;
+      }
+}
